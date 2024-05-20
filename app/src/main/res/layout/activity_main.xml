@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif"
+        android:text="CONVERTER DOLAR EM REAL"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editQuantidadeDolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite a quantidade em Dolar"
+        android:inputType="number|numberDecimal"
+        android:padding="15dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editCotacaoDolar"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:ems="10"
+        android:hint="Digite a cotacao do Dolar"
+        android:inputType="number|numberDecimal"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:text="Resultado:"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="converter"
+        android:text="Converter"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Converter" />
+
+</LinearLayout>
